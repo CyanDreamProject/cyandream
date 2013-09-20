@@ -112,6 +112,15 @@
 				<h4>OR</h4>
 				sudo ./proprietary-files.sh
 		</div>
+		
+			Speeding up rebuilds:
+		<div class="code">
+				<h3> turning on ccache can drastically improve rebuild times, but it requires hard drive space. 20GB is alright for building for one device.</h3>
+				<h4>Turn on ccache</h4>
+				export USE_CCACHE=1<br/>
+				<h4>Next we setup the source code to use ccache, this code will setup 20GB, if your planning on building for several devices then set 50-100GB</h4>
+				cd ~/android/system/prebuilts/misc/linux-x86/ccache/ccache -M 20G
+		</div>
 	</div>
 		  <span class="credits left">Project maintained by <a href="https://github.com/AndyFox2013">AndyFox2013</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>

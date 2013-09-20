@@ -180,6 +180,8 @@ a:active {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  background-color: #138EF4;
+  border: dashed;
 }
 
 h2 {
@@ -534,14 +536,7 @@ body {
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f0e7d5;
   font-weight: normal;
-  background: #252525;
-  background-attachment: fixed !important;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
-  background: -webkit-linear-gradient(#2a2a29, #1c1c1c);
-  background: -moz-linear-gradient(#2a2a29, #1c1c1c);
-  background: -o-linear-gradient(#2a2a29, #1c1c1c);
-  background: -ms-linear-gradient(#2a2a29, #1c1c1c);
-  background: linear-gradient(#2a2a29, #1c1c1c);
+  background-color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -694,6 +689,94 @@ dt {
   font-weight: normal;
 }
 
+.code{
+color: limegreen;
+font-style: italic;
+font-weight: normal;
+font-size: 15px;
+border-style: dashed;
+border-color: white;
+}
+
+.guideText{
+color: red;
+font-weight: bold;
+font-size; 18px;
+}
+
+#sidebar nav {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin: 6px auto;
+}
+
+#sidebar nav li {
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  list-style: none;
+  display: inline;
+  color: white;
+  line-height: 50px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+#sidebar {
+  z-index: 100;
+  left: 0px;
+  top: 100px;
+  height: 200px;
+  width: 13%;
+  position: fixed;
+  background: url(../images/sidebar-bg.png) #353535;
+  border-bottom: 4px solid #434343;
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+#sidebar nav li a {
+  color: white;
+  border: 5px solid #08088A;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
+  background: -webkit-linear-gradient(#00b9ff, #0038ff);
+  background: -moz-linear-gradient(#00b9ff, #0038ff);
+  background: -o-linear-gradient(#00b9ff, #0038ff);
+  background: -ms-linear-gradient(#00b9ff, #0038ff);
+  background: linear-gradient(#00b9ff, #0038ff);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  background-color: #00b9ff;
+  padding: 5px 9px;
+  margin-top: 6px;
+  line-height: 14px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: left;
+}
+#sidebar nav li a:hover {
+  color: red;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
+  background: -webkit-linear-gradient(#000000, #0038ff);
+  background: -moz-linear-gradient(#000000, #0038ff);
+  background: -o-linear-gradient(#000000, #0038ff);
+  background: -ms-linear-gradient(#000000, #0038ff);
+  background: linear-gradient(#000000, #0038ff);
+  background-color: #000000;
+  border: 1px solid #000000;
+  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+  -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+}
 #header {
   z-index: 100;
   left: 0;
@@ -779,6 +862,12 @@ dt {
   margin-right: 10px;
   font-size: 11px;
 }
+#sidebar nav li.pageside {
+	float: left;
+	margin-left: 6px;
+	margin-top: 6px
+	font-size: 20px;
+}
 
 section {
   max-width: 650px;
@@ -848,4 +937,14 @@ section #title .credits.right {
   nav {
     display: none;
   }
+  
+  #sidebar {
+	border-top: 1px solid #99CC33;
+	border-left: 1px solid #99CC33;
+	height: 300px;
+	width: 200px;
+	float: left;
+	margin-left: 5px;
+	padding: 5px 0 0 5px;
+}
 }

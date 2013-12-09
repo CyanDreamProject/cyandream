@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>CyanDreamProject: Home</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	
+	<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Menu</h3>
+			<a href="changelog.html">Changelog</a>
+			<a href="guide.html">Compiling Guide</a>
+			<a href="devices.html">Device List</a>
+			<a href="http://yauniks.dynvpn.de:86">Downloads</a>
+			<a href="https://github.com/CyanDreamProject">Source Code</a>
+		</nav>
+		
+		<div class="container">
+			<header class="clearfix">
+				<span>CyanDreamProject</span>
+				<h1><a href="http://www.android.com/versions/kit-kat-4-4/">Based on Android 4.4 KitKat</a></h1>
+				
+			</header>
+			<div class="main">
+
+				<section class="buttonset">
+					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+					<button id="showLeftPush">Menu</button>
+				</section>
+			</div>
+			
+		</div>
+		
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script>
+	</body>
+</html>

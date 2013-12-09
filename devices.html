@@ -10,30 +10,18 @@
 		<link rel="stylesheet" type="text/css" href="css/loading.css" />
 		<script src="js/modernizr.custom.js"></script>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js" type="text/javascript"></script>
-<script>		
-$(document).ready(function() {
-	$('.ball, .ball1').removeClass('stop');	    
-		$('.trigger').click(function() {
-				$('.ball, .ball1').toggleClass('stop');
+	<!-- MooFX accordian toggle-->
+	<link rel="stylesheet" type="text/css" href="css/moo.css" />
+	<script type="text/javascript" src="js/moo1.2.js"></script>
+	<script type="text/javascript">
+	window.addEvent('domready', function() { 
+		var accordion = new Accordion($$('.toggler'),$$('.element'), {
+			opacity: 0,
+			onActive: function(toggler) { toggler.setStyle('color', '#ff3300'); },
+			onBackground: function(toggler) { toggler.setStyle('color', '#FF00FF'); }
 		});
-});
-
-$(document).ready(function() {
-	$('.circle, .circle1').removeClass('stop');	    
-		$('.triggerFull').click(function() {
-				$('.circle, .circle1').toggleClass('stop');
-		});
-});
-
-$(document).ready(function() {
-	$('.barlittle').removeClass('stop');	    
-		$('.triggerBar').click(function() {
-				$('.barlittle').toggleClass('stop');
-		});
-});
-
-</script>
+	});
+	</script>
 	</head>
 	
 	<body class="cbp-spmenu-push">
@@ -48,23 +36,55 @@ $(document).ready(function() {
 		
 		<div class="container">
 			<header class="clearfix">
+				<section class="buttonset">
+					<button id="showLeftPush">Menu</button>
+				</section>
 				<span>CyanDreamProject</span>
-				<h1><a href="http://www.android.com/versions/kit-kat-4-4/">Based on Android 4.4 KitKat</a></h1>
+				<h1>Supported Devices:</h1>
 				
 			</header>
 			<div class="main">
-
-				<section class="buttonset">
-					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-					<button id="showLeftPush">Menu</button>
-				</section>
+			<hr> <br/>
+	<div id="accordion">
+			
+			
+				<h3 class="toggler">HTC Desire HD</h3>
+			<div class="element">
+				<p>Codename: ace</p>
+				<p>Download: <a href="http://yauniks.dynvpn.de:86/?device=ace">Desire HD</a>
 			</div>
 			
+			<br/>
+				<h3 class="toggler">HTC One Series</h3>
+			<div class="element">
+				<p>Codenames: m7ul, m7att, m7spr, m7tmo, m7vzw</p>
+				<p>Downloads: <a href="http://yauniks.dynvpn.de:86/?device=m7ul">GSM</a>, <a href="http://yauniks.dynvpn.de:86/?device=m7att">AT&T </a>, <a href="http://yauniks.dynvpn.de:86/?device=m7spr">Sprint</a>, <a href="http://yauniks.dynvpn.de:86/?device=m7tmo">T-Mobile</a>, <a href="http://yauniks.dynvpn.de:86/?device=m7vzw">Verizon</a></p>
+			</div>
+
+			<br/>
+			<h3 class="toggler">LG Nexus Series</h3>
+			<div class="element">
+				<p>Codenames: mako, hammerhead</p>
+				<p>Downloads: <a href="http://yauniks.dynvpn.de:86/?device=mako">Nexus 4</a>, <a href="http://yauniks.dynvpn.de:86/?device=hammerhead">Nexus 5</a>
+			</div>
 			
-			<div id="loading">
-			<p align="center"><font color="white" align="center"><h2> Website design in progress... </h2></font></p>
-			<div class="circle"></div>
-			<div class="circle1"></div>
+			<br/>
+				<h3 class="toggler">Samsung Nexus Series</h3>
+			<div class="element">
+				<p>Codenames: crespo, maguro</p>
+				<p>Download: <a href="http://yauniks.dynvpn.de:86/?device=crespo">Nexus S</a>, <a href="http://yauniks.dynvpn.de:86/?device=maguro">Galaxy Nexus</a>
+			</div>
+			
+			<br/>
+				<h3 class="toggler">Samsung Galaxy Note</h3>
+			<div class="element">
+				<p>Codenames: n7100, t0lte</p>
+				<p>Download: <a href="http://yauniks.dynvpn.de:86/?device=n7100">Galaxy Note GSM</a>, <a href="http://yauniks.dynvpn.de:86/?device=t0lte">Galaxy Note LTE</a>
+			</div>
+			
+
+	</div>			
+				
 			</div>
 		</div>
 		

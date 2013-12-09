@@ -25,14 +25,11 @@ background-color: black;
 height: 560px;
 }
 .container > header {
-	width: 90%;
+	position: relative;
+	width: 100%;
 	max-width: 69em;
 	margin: 0 auto;
 	padding: 0 1.875em 3.125em 1.875em;
-}
-
-.container > header {
-	padding: 2.875em 1.875em 1.875em;
 }
 
 .container > header h1 {
@@ -91,6 +88,11 @@ height: 560px;
 
 .main{
 background-color: black;
+text-align: center;
+}
+
+.main h2{
+	color: white;
 }
 
 .main > section {
@@ -105,8 +107,9 @@ background-color: black;
 }
 
 /*Menu button*/
-.main > section button {
+button {
 	position: relative;
+	float: left;
 	border: none;
 	background: #8A0808;
 	color: #fff;
@@ -160,4 +163,3 @@ background-color: black;
 .icon-arrow-left:before {
 	content: "\f060";
 }
-

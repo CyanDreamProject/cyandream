@@ -1,0 +1,3 @@
+.toggler  { cursor:pointer; font-weight:bold; color:#000; margin: 0 auto; padding:5px; font-size:16px; font-family:Arial, sans-serif; }
+.toggler:hover	 { background:#01DFD7; width: 50%; margin: 0px auto; }
+.element	 { padding:0 5px; }

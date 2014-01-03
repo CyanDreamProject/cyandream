@@ -106,7 +106,7 @@
 */
 
 
-	$folder = '../images/homepage';
+	$folder = '../images/homepage/';
 
 
 /*	
